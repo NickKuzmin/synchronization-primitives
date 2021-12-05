@@ -1,19 +1,19 @@
 ﻿using System;
 
-namespace SynchronizationPrimitives.Mutex
+namespace Mutex.ConsoleRunner
 {
     class Program
     {
         static void Main(string[] args)
         {
             var mutex = new System.Threading.Mutex(false, @"Global\" + Guid.Empty);
-            if (!mutex.WaitOne(0, false))
+            if (mutex.WaitOne(0, false))
             {
-                Console.WriteLine("Instance already running");
+                Console.WriteLine("First load!");
             }
             else
             {
-                Console.WriteLine("First load!");
+                Console.WriteLine("Instance already running");
             }
 
             Console.ReadKey();

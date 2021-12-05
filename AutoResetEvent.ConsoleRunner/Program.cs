@@ -1,16 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace AutoResetEvent.ConsoleRunner
 {
+    /*************************************
+    private static readonly System.Threading.AutoResetEvent WaitHandler = new System.Threading.AutoResetEvent(true);
+
+    WaitHandler.WaitOne();
+    // THREAD-SAFE-WORK
+    WaitHandler.Set();
+    **************************************/
+
     public class Program
     {
         private static readonly System.Threading.AutoResetEvent WaitHandler = new System.Threading.AutoResetEvent(true);
-        private static int _counter = 0;
+        private static int _counter;
 
         public static void Main(string[] args)
         {

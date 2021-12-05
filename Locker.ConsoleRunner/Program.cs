@@ -3,10 +3,19 @@ using System.Threading;
 
 namespace Locker.ConsoleRunner
 {
+    /*************************************
+    private static readonly object Locker = new object();
+
+    lock (Locker)
+    {
+       // THREAD-SAFE-WORK
+    }
+    **************************************/
+
     public class Program
     {
         private static readonly object Locker = new object();
-        private static int _counter = 0;
+        private static int _counter;
 
         public static void Main(string[] args)
         {

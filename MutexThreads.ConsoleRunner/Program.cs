@@ -3,6 +3,14 @@ using System.Threading;
 
 namespace MutexThreads.ConsoleRunner
 {
+    /*************************************
+    private static readonly Mutex Mutex = new Mutex();
+
+    Mutex.WaitOne();
+    // THREAD-SAFE-WORK
+    Mutex.ReleaseMutex();
+    **************************************/
+
     public class Program
     {
         private static readonly Mutex Mutex = new Mutex();

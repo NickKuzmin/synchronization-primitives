@@ -9,7 +9,7 @@ namespace Monitor.ConsoleRunner
     try
     {
         System.Threading.Monitor.Enter(Locker);
-        // ****
+        // THREAD-SAFE-WORK
     }
     finally
     {
@@ -24,7 +24,7 @@ namespace Monitor.ConsoleRunner
     try
     {
         System.Threading.Monitor.Enter(Locker, ref acquiredLock);
-        // ****
+        // THREAD-SAFE-WORK
     }
     finally
     {

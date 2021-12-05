@@ -3,6 +3,16 @@ using System.Threading;
 
 namespace Semaphore.ConsoleRunner
 {
+    /*************************************
+    private static readonly System.Threading.Semaphore Semaphore = new System.Threading.Semaphore(5, 5);
+
+    Semaphore.WaitOne();
+    Interlocked.Increment(ref _count);
+    // THREAD-SAFE-WORK
+    Interlocked.Decrement(ref _count);
+    Semaphore.Release();
+    **************************************/
+
     public class Program
     {
         private static int _count;
