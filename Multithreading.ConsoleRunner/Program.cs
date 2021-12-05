@@ -25,7 +25,7 @@ namespace Multithreading.ConsoleRunner
         {
             // ThreadPoolFastAndLongOperationsSample.Execute();
             // ThreadPoolSample.Execute();
-            ThreadPoolPerformance.Execute();
+            // ThreadPoolPerformance.Execute();
             TaskSample.Execute();
 
             Console.ReadLine();

@@ -11,25 +11,60 @@ namespace Multithreading.ConsoleRunner
             /*
              * Sync mode execution for async-method
              */
-            Task.Run(TaskRunSample).Wait();
+            Task.Run(TaskRunSampleAsync).Wait();
 
             TaskRunSampleWithWarning();
         }
 
         private static void ContinueWithSample()
         {
-            Task.Run(DoWork).ContinueWith(x =>
-            {
-                Task.Run(DoWork2);
-            });
+            Task.Run(DoWork).ContinueWith(x => { Task.Run(DoWork2); });
 
-            Task.Factory.StartNew(DoWork).ContinueWith(x =>
+            Task.Factory.StartNew(DoWork).ContinueWith(x => { Task.Factory.StartNew(DoWork); });
+
+            var task = new Task(() => DoWork());
+            task.Start();
+
+            task = new Task(DoWork);
+            task.Start();
+
+            var taskArgument = new TaskArgument
             {
-                Task.Factory.StartNew(DoWork);
-            });
+                Name = typeof(TaskArgument).AssemblyQualifiedName
+            };
+            task = new Task(DoWorkWithParameter, taskArgument);
+            task.Start();
+
+            task = new Task((@object) => DoWorkWithParameter(@object), taskArgument);
+            task.Start();
         }
 
-        private static async void TaskRunSample()
+        private static void TaskApiSample()
+        {
+            Task.Run(DoWork);
+            Task.Factory.StartNew(DoWork);
+
+            var task = new Task(DoWork);
+            task.Start();
+
+            task = new Task(() => DoWork());
+            task.Start();
+
+            task = new Task(DoWork);
+            task.RunSynchronously();
+
+            var taskArgument = new TaskArgument
+            {
+                Name = typeof(TaskArgument).AssemblyQualifiedName
+            };
+            task = new Task(DoWorkWithParameter, taskArgument);
+            task.Start();
+
+            task = new Task((@object) => DoWorkWithParameter(@object), taskArgument);
+            task.Start();
+        }
+
+        private static async void TaskRunSampleAsync()
         {
             await Task.Run(DoWork);
 
@@ -49,6 +84,16 @@ namespace Multithreading.ConsoleRunner
 
         private static void DoWork2()
         {
+        }
+
+        private static void DoWorkWithParameter(object state)
+        {
+            var taskArgument = (TaskArgument)state;
+        }
+
+        private class TaskArgument
+        {
+            public string Name { get; set; }
         }
     }
 }
