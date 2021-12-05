@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FA4A697B-8F82-4503-A562-BADEEB39BB4D}</ProjectGuid>
+    <ProjectGuid>{A83BC2BF-D33D-40A6-B0A8-19947727B5B1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SynchronizationPrimitives.Mutex</RootNamespace>
-    <AssemblyName>SynchronizationPrimitives.Mutex</AssemblyName>
+    <RootNamespace>Semaphore.ConsoleRunner</RootNamespace>
+    <AssemblyName>Semaphore.ConsoleRunner</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

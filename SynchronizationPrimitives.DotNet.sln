@@ -5,7 +5,15 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronizationPrimitives.DotNet", "SynchronizationPrimitives.DotNet\SynchronizationPrimitives.DotNet.csproj", "{8124C4CC-3731-4347-8575-253017191526}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronizationPrimitives.Mutex", "SynchronizationPrimitives.Mutex\SynchronizationPrimitives.Mutex.csproj", "{FA4A697B-8F82-4503-A562-BADEEB39BB4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutex.ConsoleRunner", "Mutex.ConsoleRunner\Mutex.ConsoleRunner.csproj", "{FA4A697B-8F82-4503-A562-BADEEB39BB4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexThreads.ConsoleRunner", "MutexThreads.ConsoleRunner\MutexThreads.ConsoleRunner.csproj", "{B5E034D2-561F-4376-A305-325C145423ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitor.ConsoleRunner", "Monitor.ConsoleRunner\Monitor.ConsoleRunner.csproj", "{AA2E4FF5-6806-483E-BED5-3CAE7B61D7EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semaphore.ConsoleRunner", "Semaphore.ConsoleRunner\Semaphore.ConsoleRunner.csproj", "{A83BC2BF-D33D-40A6-B0A8-19947727B5B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deadlocks.ConsoleRunner", "Deadlocks.ConsoleRunner\Deadlocks.ConsoleRunner.csproj", "{74D5E12A-040C-4973-8B70-3AD5B38ED917}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{FA4A697B-8F82-4503-A562-BADEEB39BB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA4A697B-8F82-4503-A562-BADEEB39BB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA4A697B-8F82-4503-A562-BADEEB39BB4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5E034D2-561F-4376-A305-325C145423ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E034D2-561F-4376-A305-325C145423ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E034D2-561F-4376-A305-325C145423ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E034D2-561F-4376-A305-325C145423ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA2E4FF5-6806-483E-BED5-3CAE7B61D7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA2E4FF5-6806-483E-BED5-3CAE7B61D7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA2E4FF5-6806-483E-BED5-3CAE7B61D7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA2E4FF5-6806-483E-BED5-3CAE7B61D7EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A83BC2BF-D33D-40A6-B0A8-19947727B5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A83BC2BF-D33D-40A6-B0A8-19947727B5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A83BC2BF-D33D-40A6-B0A8-19947727B5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A83BC2BF-D33D-40A6-B0A8-19947727B5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D5E12A-040C-4973-8B70-3AD5B38ED917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D5E12A-040C-4973-8B70-3AD5B38ED917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D5E12A-040C-4973-8B70-3AD5B38ED917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D5E12A-040C-4973-8B70-3AD5B38ED917}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
