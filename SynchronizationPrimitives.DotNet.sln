@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semaphore.ConsoleRunner", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deadlocks.ConsoleRunner", "Deadlocks.ConsoleRunner\Deadlocks.ConsoleRunner.csproj", "{74D5E12A-040C-4973-8B70-3AD5B38ED917}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoResetEvent.ConsoleRunner", "AutoResetEvent.ConsoleRunner\AutoResetEvent.ConsoleRunner.csproj", "{BA36A50C-6DD1-4D20-83D8-12A22202DC92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locker.ConsoleRunner", "Locker.ConsoleRunner\Locker.ConsoleRunner.csproj", "{2595D435-A467-4810-9006-D2F4C4E48800}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{74D5E12A-040C-4973-8B70-3AD5B38ED917}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74D5E12A-040C-4973-8B70-3AD5B38ED917}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74D5E12A-040C-4973-8B70-3AD5B38ED917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA36A50C-6DD1-4D20-83D8-12A22202DC92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA36A50C-6DD1-4D20-83D8-12A22202DC92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA36A50C-6DD1-4D20-83D8-12A22202DC92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA36A50C-6DD1-4D20-83D8-12A22202DC92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2595D435-A467-4810-9006-D2F4C4E48800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2595D435-A467-4810-9006-D2F4C4E48800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2595D435-A467-4810-9006-D2F4C4E48800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2595D435-A467-4810-9006-D2F4C4E48800}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
