@@ -1,3 +1,5 @@
+**AutoResetEvent:**
+
 ```
 System.Threading.AutoResetEvent WaitHandler = new System.Threading.AutoResetEvent(true);
 
@@ -5,7 +7,8 @@ WaitHandler.WaitOne();
 // THREAD-SAFE-WORK
 WaitHandler.Set();
 ```
-
+---------------------------------------------------
+**Lock:**
 ```
 private static readonly object Locker = new object();
 
@@ -14,7 +17,8 @@ lock (Locker)
    // THREAD-SAFE-WORK
 }
 ```
-
+---------------------------------------------------
+**Monitor:**
 ```
 private static readonly object Locker = new object();
 
@@ -28,7 +32,8 @@ finally
     System.Threading.Monitor.Exit(Locker);
 }
 ```
-
+---------------------------------------------------
+**Monitor:**
 ```
 private static readonly object Locker = new object();
 
@@ -46,7 +51,8 @@ finally
     }
 }
 ```
-
+---------------------------------------------------
+**Mutex:**
 ```
 private static readonly Mutex Mutex = new Mutex();
 
@@ -54,7 +60,8 @@ Mutex.WaitOne();
 // THREAD-SAFE-WORK
 Mutex.ReleaseMutex();
 ```
-
+---------------------------------------------------
+**Semaphore:**
 ```
 private static readonly System.Threading.Semaphore Semaphore = new System.Threading.Semaphore(5, 5);
 
