@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task.ConsoleRunner", "Task.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskCancellationTokenSource.ConsoleRunner", "TaskCancellationTokenSource.ConsoleRunner\TaskCancellationTokenSource.ConsoleRunner.csproj", "{790DEB76-A3D3-410E-8F68-D9DBE485FBF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait.ConsoleRunner", "AsyncAwait.ConsoleRunner\AsyncAwait.ConsoleRunner.csproj", "{760E5411-327B-4B08-9FDA-AE8B57A7D6D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{790DEB76-A3D3-410E-8F68-D9DBE485FBF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{790DEB76-A3D3-410E-8F68-D9DBE485FBF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{790DEB76-A3D3-410E-8F68-D9DBE485FBF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{760E5411-327B-4B08-9FDA-AE8B57A7D6D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{760E5411-327B-4B08-9FDA-AE8B57A7D6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{760E5411-327B-4B08-9FDA-AE8B57A7D6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{760E5411-327B-4B08-9FDA-AE8B57A7D6D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
